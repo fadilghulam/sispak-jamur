@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/showAttribute"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Show Attribute" />
+
+        <LinearLayout
+            android:id="@+id/containerHasil"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textFitur1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Fitur 1">
+            </TextView>
+
+            <TextView
+                android:id="@+id/textFitur2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Fitur 2">
+            </TextView>
+            <TextView
+                android:id="@+id/textFitur3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Fitur 3">
+            </TextView>
+            <TextView
+                android:id="@+id/textFitur4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Fitur 4">
+            </TextView>
+            <TextView
+                android:id="@+id/textFitur5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Fitur 5">
+            </TextView>
+            <TextView
+                android:id="@+id/textFitur6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Fitur 6">
+            </TextView>
+            <TextView
+                android:id="@+id/textFitur7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Fitur 7">
+            </TextView>
+            <TextView
+                android:id="@+id/textFitur8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Fitur 8">
+            </TextView>
+            <TextView
+                android:id="@+id/textFitur9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Fitur 9">
+            </TextView>
+            <TextView
+                android:id="@+id/textFitur10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Fitur 10">
+            </TextView>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textHasilKlasifikasi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:text="Hasil Klasifikasi">
+        </TextView>
+</LinearLayout>

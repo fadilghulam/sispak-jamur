@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="k">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+    </string-array>
+
+    <string-array name="bentukTudung">
+        <item></item>
+        <item>Lonceng</item>
+        <item>Kerucut</item>
+        <item>Cembung</item>
+        <item>Datar</item>
+        <item>Menonjol</item>
+        <item>Cekung</item>
+    </string-array>
+
+    <string-array name="permukaanTudung">
+        <item></item>
+        <item>Berserat</item>
+        <item>Bergaris</item>
+        <item>Bersisik</item>
+        <item>Halus</item>
+    </string-array>
+
+    <string-array name="warnaTudung">
+        <item></item>
+        <item>Coklat</item>
+        <item>Kekuningan</item>
+        <item>Coklat Muda</item>
+        <item>Abu - abu</item>
+        <item>Hijau</item>
+        <item>Merah Muda</item>
+        <item>Ungu</item>
+        <item>Merah</item>
+        <item>Putih</item>
+        <item>Kuning</item>
+    </string-array>
+
+    <string-array name="kondisiJamur">
+        <item></item>
+        <item>Baik</item>
+        <item>Memar</item>
+    </string-array>
+
+    <string-array name="aromaJamur">
+        <item></item>
+        <item>Almond</item>
+        <item>Anise</item>
+        <item>Kreosot</item>
+        <item>Amis</item>
+        <item>Busuk</item>
+        <item>Basi</item>
+        <item>Tidak Berbau</item>
+        <item>Tajam</item>
+        <item>Pedas</item>
+    </string-array>
+
+    <string-array name="pelekatanInsang">
+        <item></item>
+        <item>Terlampir</item>
+        <item>Menurun</item>
+        <item>Lepas</item>
+        <item>Berlekuk</item>
+    </string-array>
+
+    <string-array name="kerapatanGarisInsang">
+        <item></item>
+        <item>Dekat</item>
+        <item>Penuh</item>
+        <item>Renggang</item>
+    </string-array>
+
+    <string-array name="ukuranInsang">
+        <item></item>
+        <item>Luas</item>
+        <item>Sempit</item>
+    </string-array>
+
+    <string-array name="warnaInsang">
+        <item></item>
+        <item>Hitam</item>
+        <item>Coklat</item>
+        <item>Kekuningan</item>
+        <item>Coklat Muda</item>
+        <item>Abu - abu</item>
+        <item>Hijau</item>
+        <item>Jingga</item>
+        <item>Merah muda</item>
+        <item>Ungu</item>
+        <item>Merah</item>
+        <item>Putih</item>
+        <item>Kuning</item>
+    </string-array>
+
+    <string-array name="bentukTangkai">
+        <item></item>
+        <item>Membesar</item>
+        <item>Lonjong</item>
+    </string-array>
+
+    <string-array name="akarTangkai">
+        <item></item>
+        <item>Bulat</item>
+        <item>Klub</item>
+        <item>Mangkuk</item>
+        <item>Sejajar</item>
+        <item>Merambat</item>
+        <item>Berakar</item>
+        <item>Tidak ada</item>
+    </string-array>
+
+    <string-array name="permukaanTangkaiAtasCincin">
+        <item></item>
+        <item>Berserat</item>
+        <item>Bersisik</item>
+        <item>Halus</item>
+        <item>Licin</item>
+    </string-array>
+
+    <string-array name="permukaanTangkaiBawahCincin">
+        <item></item>
+        <item>Berserat</item>
+        <item>Bersisik</item>
+        <item>Halus</item>
+        <item>Licin</item>
+    </string-array>
+
+    <string-array name="warnaTangkaiAtasCincin">
+        <item></item>
+        <item>Coklat</item>
+        <item>Kekuningan</item>
+        <item>Coklat Muda</item>
+        <item>Abu - abu</item>
+        <item>Jingga</item>
+        <item>Merah muda</item>
+        <item>Merah</item>
+        <item>Putih</item>
+        <item>Kuning</item>
+    </string-array>
+
+    <string-array name="warnaTangkaiBawahCincin">
+        <item></item>
+        <item>Coklat</item>
+        <item>Kekuningan</item>
+        <item>Coklat Muda</item>
+        <item>Abu - abu</item>
+        <item>Jingga</item>
+        <item>Merah muda</item>
+        <item>Merah</item>
+        <item>Putih</item>
+        <item>Kuning</item>
+    </string-array>
+
+    <string-array name="tipeMembranPembungkus">
+        <item></item>
+        <item>Sebagian</item>
+        <item>Keseluruhan</item>
+    </string-array>
+
+    <string-array name="warnaMembranPembungkus">
+        <item></item>
+        <item>Coklat</item>
+        <item>Jingga</item>
+        <item>Putih</item>
+        <item>Kuning</item>
+    </string-array>
+
+    <string-array name="banyakCincin">
+        <item></item>
+        <item>Tidak ada</item>
+        <item>Satu</item>
+        <item>Dua</item>
+    </string-array>
+
+    <string-array name="tipeCincin">
+        <item></item>
+        <item>Sarang laba-laba</item>
+        <item>Cepat Menghilang</item>
+        <item>Terang</item>
+        <item>Besar</item>
+        <item>Tidak ada</item>
+        <item>Liontin</item>
+        <item>Berlapis</item>
+        <item>Zona</item>
+    </string-array>
+
+    <string-array name="warnaSpore">
+        <item></item>
+        <item>Hitam</item>
+        <item>Coklat</item>
+        <item>Kekuningan</item>
+        <item>Coklat Muda</item>
+        <item>Hijau</item>
+        <item>Jingga</item>
+        <item>Ungu</item>
+        <item>Putih</item>
+        <item>Kuning</item>
+    </string-array>
+
+    <string-array name="populasiJamur">
+        <item></item>
+        <item>Belimpah</item>
+        <item>Berkelompok</item>
+        <item>Banyak sekali</item>
+        <item>Tersebar</item>
+        <item>Beberapa</item>
+        <item>Tunggal</item>
+    </string-array>
+
+    <string-array name="habitatJamur">
+        <item></item>
+        <item>Rerumputan</item>
+        <item>Dedaunan</item>
+        <item>Padang rumput</item>
+        <item>Jalan</item>
+        <item>Perkotaan</item>
+        <item>Limbah</item>
+        <item>Pepohonan</item>
+    </string-array>
+</resources>
