@@ -14,6 +14,10 @@ import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.chaquo.python.PyObject;
+import com.chaquo.python.Python;
+import com.chaquo.python.android.AndroidPlatform;
+
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -33,6 +37,7 @@ public class HomeActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.home2);
+
 
         setTitle("Pilih Ciri-Ciri Jamur");
 
@@ -799,6 +804,20 @@ public class HomeActivity extends AppCompatActivity {
 
             }
         });
+
+        if(!Python.isStarted())
+            Python.start(new AndroidPlatform(this));
+
+        Python py = Python.getInstance();
+        final PyObject pyobj = py.getModule("main");
+
+        Btn.setOnClickListener(new View.onClickListener()){
+//            @Override
+            public void onClick(View view){
+                PyObject obj = pyobj.callAttr("main", fiturCiri1, fiturCiri2, fiturCiri3, fiturCiri4, fiturCiri5, fiturCiri6, fiturCiri7, fiturCiri8, fiturCiri9, fiturCiri10, fiturCiri11,fiturCiri12, fiturCiri13, fiturCiri14, fiturCiri15, fiturCiri16, fiturCiri17, fiturCiri18, fiturCiri19, fiturCiri20, fiturCiri21, fiturCiri22,K);
+                tv.setText(obj.toString());
+            }
+        }
 
 
 
