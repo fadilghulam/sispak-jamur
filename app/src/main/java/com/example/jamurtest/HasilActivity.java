@@ -100,7 +100,7 @@ public class HasilActivity extends AppCompatActivity implements View.OnClickList
 
         String hasil = getIntent().getStringExtra("testing");
         textViewHasil = findViewById(R.id.textHasilKlasifikasi);
-        textViewHasil.setText("Hasil Klasifikasi " + hasil);
+        textViewHasil.setText("Hasil Klasifikasi: " + hasil);
 
         contHasil = findViewById(R.id.containerHasil);
         buttonAttr = findViewById(R.id.showAttribute);

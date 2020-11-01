@@ -812,7 +812,7 @@ public class HomeActivity extends AppCompatActivity {
         spinnerK = findViewById(R.id.nilaiK);
         List<String> listK = Arrays.asList(getResources().getStringArray(R.array.k));
         CustomAdapter adapterK = new CustomAdapter(this, android.R.layout.simple_spinner_item, listK, hidingItemIndex);
-        dataAdapter22.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        adapterK.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         spinnerK.setAdapter(adapterK);
 
         spinnerK.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
@@ -823,13 +823,13 @@ public class HomeActivity extends AppCompatActivity {
                         case 1:
                             nilaiK = 1;
                             break;
-                        case 3:
+                        case 2:
                             nilaiK = 3;
                             break;
-                        case 5:
+                        case 3:
                             nilaiK = 5;
                             break;
-                        case 7:
+                        case 4:
                             nilaiK = 7;
                             break;
                     }
@@ -899,8 +899,6 @@ public class HomeActivity extends AppCompatActivity {
             intent.putExtra("textCiri21", textCiri21);
             intent.putExtra("textCiri22", textCiri22);
 
-
-
             PyObject obj = pyobj.callAttr("main", fiturCiri1, fiturCiri2, fiturCiri3, fiturCiri4, fiturCiri5, fiturCiri6,
                     fiturCiri7, fiturCiri8, fiturCiri9, fiturCiri10, fiturCiri11,fiturCiri12, fiturCiri13, fiturCiri14,
                     fiturCiri15, fiturCiri16, fiturCiri17, fiturCiri18, fiturCiri19, fiturCiri20, fiturCiri21, fiturCiri22,nilaiK);
@@ -909,25 +907,7 @@ public class HomeActivity extends AppCompatActivity {
 
             startActivity(intent);
         });
-
-
-
-        //btnProceed.setOnClickListener(view -> goDiagnose());
     }
-
-
-    private void goDiagnose(){
-
-        //Toast.makeText(this, String.valueOf(count), Toast.LENGTH_SHORT).show();
-
-//        Intent intent = new Intent(HomeActivity.this, HasilActivity.class);
-//        String x = fitur22.getSelectedItem().toString();
-//        intent.putExtra("fiturRG1", fiturCiri1);
-//        intent.putExtra("spinnerText", x);
-//
-//        startActivity(intent);
-    }
-
 }
 
 class CustomAdapter extends ArrayAdapter<String> {
