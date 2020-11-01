@@ -20,7 +20,7 @@ android {
             }
         }
         python {
-            buildPython "C:/Users/ACER/AppData/Local/Programs/Python/Python37-32"
+            buildPython "C:/Python/"
         }
         ndk {
             abiFilters "armeabi-v7a", "x86"

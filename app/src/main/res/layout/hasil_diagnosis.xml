@@ -26,7 +26,6 @@
                 android:layout_height="wrap_content"
                 android:text="Fitur 1">
             </TextView>
-
             <TextView
                 android:id="@+id/textFitur2"
                 android:layout_width="wrap_content"
@@ -81,6 +80,78 @@
                 android:layout_height="wrap_content"
                 android:text="Fitur 10">
             </TextView>
+            <TextView
+                android:id="@+id/textFitur11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Fitur 11">
+            </TextView>
+            <TextView
+                android:id="@+id/textFitur12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Fitur 12">
+            </TextView>
+            <TextView
+                android:id="@+id/textFitur13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Fitur 13">
+            </TextView>
+            <TextView
+                android:id="@+id/textFitur14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Fitur 14">
+            </TextView>
+            <TextView
+                android:id="@+id/textFitur15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Fitur 15">
+            </TextView>
+            <TextView
+                android:id="@+id/textFitur16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Fitur 16">
+            </TextView>
+            <TextView
+                android:id="@+id/textFitur17"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Fitur 17">
+            </TextView>
+            <TextView
+                android:id="@+id/textFitur18"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Fitur 18">
+            </TextView>
+            <TextView
+                android:id="@+id/textFitur19"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Fitur 19">
+            </TextView>
+            <TextView
+                android:id="@+id/textFitur20"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Fitur 20">
+            </TextView>
+            <TextView
+                android:id="@+id/textFitur21"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Fitur 21">
+            </TextView>
+            <TextView
+                android:id="@+id/textFitur22"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Fitur 22">
+            </TextView>
 
         </LinearLayout>
 
@@ -90,6 +161,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:textSize="20dp"
+            android:layout_marginTop="20dp"
             android:textStyle="bold"
             android:text="Hasil Klasifikasi">
         </TextView>

@@ -29,10 +29,14 @@ public class HomeActivity extends AppCompatActivity {
             fitur6, fitur7, fitur8, fitur9, fitur10,
             fitur11, fitur12, fitur13, fitur14, fitur15,
             fitur16, fitur17, fitur18, fitur19, fitur20,
-            fitur21, fitur22,K;
+            fitur21, fitur22, spinnerK;
 
     public double fiturCiri1, fiturCiri2, fiturCiri3, fiturCiri4, fiturCiri5, fiturCiri6, fiturCiri7, fiturCiri8, fiturCiri9, fiturCiri10, fiturCiri11;
     public double fiturCiri12, fiturCiri13, fiturCiri14, fiturCiri15, fiturCiri16, fiturCiri17, fiturCiri18, fiturCiri19, fiturCiri20, fiturCiri21, fiturCiri22;
+    public int nilaiK;
+
+    public String textCiri1, textCiri2, textCiri3, textCiri4, textCiri5, textCiri6, textCiri7, textCiri8, textCiri9, textCiri10, textCiri11, textCiri12, textCiri13, textCiri14;
+    public String textCiri15, textCiri16, textCiri17, textCiri18, textCiri19, textCiri20, textCiri21, textCiri22;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -530,7 +534,7 @@ public class HomeActivity extends AppCompatActivity {
         fitur15 = findViewById(R.id.warnaTangkaiBawahCincin);
         List<String> list15 = Arrays.asList(getResources().getStringArray(R.array.warnaTangkaiBawahCincin));
         CustomAdapter dataAdapter15 = new CustomAdapter(this, android.R.layout.simple_spinner_item, list15, hidingItemIndex);
-        dataAdapter14.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        dataAdapter15.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         fitur15.setAdapter(dataAdapter15);
 
         fitur15.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
@@ -569,7 +573,7 @@ public class HomeActivity extends AppCompatActivity {
         fitur16 = findViewById(R.id.tipeMembranPembungkus);
         List<String> list16 = Arrays.asList(getResources().getStringArray(R.array.tipeMembranPembungkus));
         CustomAdapter dataAdapter16 = new CustomAdapter(this, android.R.layout.simple_spinner_item, list16, hidingItemIndex);
-        dataAdapter14.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        dataAdapter16.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         fitur16.setAdapter(dataAdapter16);
 
         fitur16.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
@@ -805,24 +809,110 @@ public class HomeActivity extends AppCompatActivity {
             }
         });
 
+        spinnerK = findViewById(R.id.nilaiK);
+        List<String> listK = Arrays.asList(getResources().getStringArray(R.array.k));
+        CustomAdapter adapterK = new CustomAdapter(this, android.R.layout.simple_spinner_item, listK, hidingItemIndex);
+        dataAdapter22.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        spinnerK.setAdapter(adapterK);
+
+        spinnerK.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+                if(position != 0){
+                    switch(position){
+                        case 1:
+                            nilaiK = 1;
+                            break;
+                        case 3:
+                            nilaiK = 3;
+                            break;
+                        case 5:
+                            nilaiK = 5;
+                            break;
+                        case 7:
+                            nilaiK = 7;
+                            break;
+                    }
+                }
+            }
+            @Override
+            public void onNothingSelected(AdapterView<?> parent) {
+
+            }
+        });
+
+        btnProceed = findViewById(R.id.buttonDiagnose);
+
         if(!Python.isStarted())
             Python.start(new AndroidPlatform(this));
 
         Python py = Python.getInstance();
-        final PyObject pyobj = py.getModule("main");
+        final PyObject pyobj = py.getModule("tes");
 
-        Btn.setOnClickListener(new View.onClickListener()){
-//            @Override
-            public void onClick(View view){
-                PyObject obj = pyobj.callAttr("main", fiturCiri1, fiturCiri2, fiturCiri3, fiturCiri4, fiturCiri5, fiturCiri6, fiturCiri7, fiturCiri8, fiturCiri9, fiturCiri10, fiturCiri11,fiturCiri12, fiturCiri13, fiturCiri14, fiturCiri15, fiturCiri16, fiturCiri17, fiturCiri18, fiturCiri19, fiturCiri20, fiturCiri21, fiturCiri22,K);
-                tv.setText(obj.toString());
-            }
-        }
+        btnProceed.setOnClickListener(view -> {
+
+            Intent intent = new Intent(HomeActivity.this, HasilActivity.class);
+
+            textCiri1 = fitur1.getSelectedItem().toString();
+            textCiri2 = fitur2.getSelectedItem().toString();
+            textCiri3 = fitur3.getSelectedItem().toString();
+            textCiri4 = fitur4.getSelectedItem().toString();
+            textCiri5 = fitur5.getSelectedItem().toString();
+            textCiri6 = fitur6.getSelectedItem().toString();
+            textCiri7 = fitur7.getSelectedItem().toString();
+            textCiri8 = fitur8.getSelectedItem().toString();
+            textCiri9 = fitur9.getSelectedItem().toString();
+            textCiri10 = fitur10.getSelectedItem().toString();
+            textCiri11 = fitur11.getSelectedItem().toString();
+            textCiri12 = fitur12.getSelectedItem().toString();
+            textCiri13 = fitur13.getSelectedItem().toString();
+            textCiri14 = fitur14.getSelectedItem().toString();
+            textCiri15 = fitur15.getSelectedItem().toString();
+            textCiri16 = fitur16.getSelectedItem().toString();
+            textCiri17 = fitur17.getSelectedItem().toString();
+            textCiri18 = fitur18.getSelectedItem().toString();
+            textCiri19 = fitur19.getSelectedItem().toString();
+            textCiri20 = fitur20.getSelectedItem().toString();
+            textCiri21 = fitur21.getSelectedItem().toString();
+            textCiri22 = fitur22.getSelectedItem().toString();
+
+            intent.putExtra("textCiri1", textCiri1);
+            intent.putExtra("textCiri2", textCiri2);
+            intent.putExtra("textCiri3", textCiri3);
+            intent.putExtra("textCiri4", textCiri4);
+            intent.putExtra("textCiri5", textCiri5);
+            intent.putExtra("textCiri6", textCiri6);
+            intent.putExtra("textCiri7", textCiri7);
+            intent.putExtra("textCiri8", textCiri8);
+            intent.putExtra("textCiri9", textCiri9);
+            intent.putExtra("textCiri10", textCiri10);
+            intent.putExtra("textCiri11", textCiri11);
+            intent.putExtra("textCiri12", textCiri12);
+            intent.putExtra("textCiri13", textCiri13);
+            intent.putExtra("textCiri14", textCiri14);
+            intent.putExtra("textCiri15", textCiri15);
+            intent.putExtra("textCiri16", textCiri16);
+            intent.putExtra("textCiri17", textCiri17);
+            intent.putExtra("textCiri18", textCiri18);
+            intent.putExtra("textCiri19", textCiri19);
+            intent.putExtra("textCiri20", textCiri20);
+            intent.putExtra("textCiri21", textCiri21);
+            intent.putExtra("textCiri22", textCiri22);
 
 
 
-        btnProceed = findViewById(R.id.buttonDiagnose);
-        btnProceed.setOnClickListener(view -> goDiagnose());
+            PyObject obj = pyobj.callAttr("main", fiturCiri1, fiturCiri2, fiturCiri3, fiturCiri4, fiturCiri5, fiturCiri6,
+                    fiturCiri7, fiturCiri8, fiturCiri9, fiturCiri10, fiturCiri11,fiturCiri12, fiturCiri13, fiturCiri14,
+                    fiturCiri15, fiturCiri16, fiturCiri17, fiturCiri18, fiturCiri19, fiturCiri20, fiturCiri21, fiturCiri22,nilaiK);
+
+            intent.putExtra("testing", obj.toString());
+
+            startActivity(intent);
+        });
+
+
+
+        //btnProceed.setOnClickListener(view -> goDiagnose());
     }
 
 
@@ -830,12 +920,12 @@ public class HomeActivity extends AppCompatActivity {
 
         //Toast.makeText(this, String.valueOf(count), Toast.LENGTH_SHORT).show();
 
-        Intent intent = new Intent(HomeActivity.this, HasilActivity.class);
-        String x = fitur22.getSelectedItem().toString();
-        intent.putExtra("fiturRG1", fiturCiri1);
-        intent.putExtra("spinnerText", x);
-
-        startActivity(intent);
+//        Intent intent = new Intent(HomeActivity.this, HasilActivity.class);
+//        String x = fitur22.getSelectedItem().toString();
+//        intent.putExtra("fiturRG1", fiturCiri1);
+//        intent.putExtra("spinnerText", x);
+//
+//        startActivity(intent);
     }
 
 }
