@@ -18,7 +18,6 @@ import com.chaquo.python.PyObject;
 import com.chaquo.python.Python;
 import com.chaquo.python.android.AndroidPlatform;
 
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
@@ -851,61 +850,89 @@ public class HomeActivity extends AppCompatActivity {
 
         btnProceed.setOnClickListener(view -> {
 
-            Intent intent = new Intent(HomeActivity.this, HasilActivity.class);
+            if(fitur1.getSelectedItem().toString().equals("") ||
+                    fitur2.getSelectedItem().toString().equals("") ||
+                    fitur3.getSelectedItem().toString().equals("") ||
+                    fitur4.getSelectedItem().toString().equals("") ||
+                    fitur5.getSelectedItem().toString().equals("") ||
+                    fitur6.getSelectedItem().toString().equals("") ||
+                    fitur7.getSelectedItem().toString().equals("") ||
+                    fitur8.getSelectedItem().toString().equals("") ||
+                    fitur9.getSelectedItem().toString().equals("") ||
+                    fitur10.getSelectedItem().toString().equals("") ||
+                    fitur11.getSelectedItem().toString().equals("") ||
+                    fitur12.getSelectedItem().toString().equals("") ||
+                    fitur13.getSelectedItem().toString().equals("") ||
+                    fitur14.getSelectedItem().toString().equals("") ||
+                    fitur15.getSelectedItem().toString().equals("") ||
+                    fitur16.getSelectedItem().toString().equals("") ||
+                    fitur17.getSelectedItem().toString().equals("") ||
+                    fitur18.getSelectedItem().toString().equals("") ||
+                    fitur19.getSelectedItem().toString().equals("") ||
+                    fitur20.getSelectedItem().toString().equals("") ||
+                    fitur21.getSelectedItem().toString().equals("") ||
+                    fitur22.getSelectedItem().toString().equals("") ||
+                    spinnerK.getSelectedItem().toString().equals("")
+            ) {
+                Toast.makeText(this, "Field ada yang kosong", Toast.LENGTH_LONG).show();
+            } else {
 
-            textCiri1 = fitur1.getSelectedItem().toString();
-            textCiri2 = fitur2.getSelectedItem().toString();
-            textCiri3 = fitur3.getSelectedItem().toString();
-            textCiri4 = fitur4.getSelectedItem().toString();
-            textCiri5 = fitur5.getSelectedItem().toString();
-            textCiri6 = fitur6.getSelectedItem().toString();
-            textCiri7 = fitur7.getSelectedItem().toString();
-            textCiri8 = fitur8.getSelectedItem().toString();
-            textCiri9 = fitur9.getSelectedItem().toString();
-            textCiri10 = fitur10.getSelectedItem().toString();
-            textCiri11 = fitur11.getSelectedItem().toString();
-            textCiri12 = fitur12.getSelectedItem().toString();
-            textCiri13 = fitur13.getSelectedItem().toString();
-            textCiri14 = fitur14.getSelectedItem().toString();
-            textCiri15 = fitur15.getSelectedItem().toString();
-            textCiri16 = fitur16.getSelectedItem().toString();
-            textCiri17 = fitur17.getSelectedItem().toString();
-            textCiri18 = fitur18.getSelectedItem().toString();
-            textCiri19 = fitur19.getSelectedItem().toString();
-            textCiri20 = fitur20.getSelectedItem().toString();
-            textCiri21 = fitur21.getSelectedItem().toString();
-            textCiri22 = fitur22.getSelectedItem().toString();
+                Intent intent = new Intent(HomeActivity.this, HasilActivity.class);
 
-            intent.putExtra("textCiri1", textCiri1);
-            intent.putExtra("textCiri2", textCiri2);
-            intent.putExtra("textCiri3", textCiri3);
-            intent.putExtra("textCiri4", textCiri4);
-            intent.putExtra("textCiri5", textCiri5);
-            intent.putExtra("textCiri6", textCiri6);
-            intent.putExtra("textCiri7", textCiri7);
-            intent.putExtra("textCiri8", textCiri8);
-            intent.putExtra("textCiri9", textCiri9);
-            intent.putExtra("textCiri10", textCiri10);
-            intent.putExtra("textCiri11", textCiri11);
-            intent.putExtra("textCiri12", textCiri12);
-            intent.putExtra("textCiri13", textCiri13);
-            intent.putExtra("textCiri14", textCiri14);
-            intent.putExtra("textCiri15", textCiri15);
-            intent.putExtra("textCiri16", textCiri16);
-            intent.putExtra("textCiri17", textCiri17);
-            intent.putExtra("textCiri18", textCiri18);
-            intent.putExtra("textCiri19", textCiri19);
-            intent.putExtra("textCiri20", textCiri20);
-            intent.putExtra("textCiri21", textCiri21);
-            intent.putExtra("textCiri22", textCiri22);
+                textCiri1 = fitur1.getSelectedItem().toString();
+                textCiri2 = fitur2.getSelectedItem().toString();
+                textCiri3 = fitur3.getSelectedItem().toString();
+                textCiri4 = fitur4.getSelectedItem().toString();
+                textCiri5 = fitur5.getSelectedItem().toString();
+                textCiri6 = fitur6.getSelectedItem().toString();
+                textCiri7 = fitur7.getSelectedItem().toString();
+                textCiri8 = fitur8.getSelectedItem().toString();
+                textCiri9 = fitur9.getSelectedItem().toString();
+                textCiri10 = fitur10.getSelectedItem().toString();
+                textCiri11 = fitur11.getSelectedItem().toString();
+                textCiri12 = fitur12.getSelectedItem().toString();
+                textCiri13 = fitur13.getSelectedItem().toString();
+                textCiri14 = fitur14.getSelectedItem().toString();
+                textCiri15 = fitur15.getSelectedItem().toString();
+                textCiri16 = fitur16.getSelectedItem().toString();
+                textCiri17 = fitur17.getSelectedItem().toString();
+                textCiri18 = fitur18.getSelectedItem().toString();
+                textCiri19 = fitur19.getSelectedItem().toString();
+                textCiri20 = fitur20.getSelectedItem().toString();
+                textCiri21 = fitur21.getSelectedItem().toString();
+                textCiri22 = fitur22.getSelectedItem().toString();
 
-            PyObject obj = pyobj.callAttr("main", fiturCiri1, fiturCiri2, fiturCiri3, fiturCiri4, fiturCiri5, fiturCiri6,
-                    fiturCiri7, fiturCiri8, fiturCiri9, fiturCiri10, fiturCiri11,fiturCiri12, fiturCiri13, fiturCiri14,
-                    fiturCiri15, fiturCiri16, fiturCiri17, fiturCiri18, fiturCiri19, fiturCiri20, fiturCiri21, fiturCiri22,nilaiK);
+                intent.putExtra("textCiri1", textCiri1);
+                intent.putExtra("textCiri2", textCiri2);
+                intent.putExtra("textCiri3", textCiri3);
+                intent.putExtra("textCiri4", textCiri4);
+                intent.putExtra("textCiri5", textCiri5);
+                intent.putExtra("textCiri6", textCiri6);
+                intent.putExtra("textCiri7", textCiri7);
+                intent.putExtra("textCiri8", textCiri8);
+                intent.putExtra("textCiri9", textCiri9);
+                intent.putExtra("textCiri10", textCiri10);
+                intent.putExtra("textCiri11", textCiri11);
+                intent.putExtra("textCiri12", textCiri12);
+                intent.putExtra("textCiri13", textCiri13);
+                intent.putExtra("textCiri14", textCiri14);
+                intent.putExtra("textCiri15", textCiri15);
+                intent.putExtra("textCiri16", textCiri16);
+                intent.putExtra("textCiri17", textCiri17);
+                intent.putExtra("textCiri18", textCiri18);
+                intent.putExtra("textCiri19", textCiri19);
+                intent.putExtra("textCiri20", textCiri20);
+                intent.putExtra("textCiri21", textCiri21);
+                intent.putExtra("textCiri22", textCiri22);
 
-            intent.putExtra("testing", obj.toString());
+                PyObject obj = pyobj.callAttr("main", fiturCiri1, fiturCiri2, fiturCiri3, fiturCiri4, fiturCiri5, fiturCiri6,
+                        fiturCiri7, fiturCiri8, fiturCiri9, fiturCiri10, fiturCiri11,fiturCiri12, fiturCiri13, fiturCiri14,
+                        fiturCiri15, fiturCiri16, fiturCiri17, fiturCiri18, fiturCiri19, fiturCiri20, fiturCiri21, fiturCiri22,nilaiK);
 
-            startActivity(intent);
+                intent.putExtra("testing", obj.toString());
+
+                startActivity(intent);
+            }
         });
     }
 }
