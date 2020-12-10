@@ -25,8 +25,6 @@ public class HasilActivity extends AppCompatActivity implements View.OnClickList
         super.onCreate(savedInstanceState);
         setContentView(R.layout.hasil_diagnosis);
 
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-
         setTitle("Hasil Klasifikasi Jamur");
 
         textFitur1 = findViewById(R.id.textFitur1);
@@ -120,14 +118,6 @@ public class HasilActivity extends AppCompatActivity implements View.OnClickList
         viewGroup = !viewGroup;
     }
 
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        if (item.getItemId() == android.R.id.home) {
-            onBackPressed();
-            return true;
-        }
-        return super.onOptionsItemSelected(item);
-    }
 }
 
 //        Toast.makeText(this, String.valueOf(fiturJ1), Toast.LENGTH_SHORT).show();

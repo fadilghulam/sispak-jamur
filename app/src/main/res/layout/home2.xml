@@ -6,8 +6,23 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@color/white"
+        android:background="@drawable/background_1"
         android:orientation="vertical">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_width="match_parent"
+            android:background="#E1F5FE">
+
+            <TextView
+                android:layout_height="match_parent"
+                android:layout_width="wrap_content"
+                android:textColor="#0D47A1"
+                android:textSize="20dp"
+                android:gravity="center"
+                android:text="Pilih Klasifikasi"/>
+        </androidx.appcompat.widget.Toolbar>
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -19,12 +34,17 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:layout_gravity="center"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="15dp"
                 android:text="Bentuk Tudung" />
 
             <Spinner
                 android:id="@+id/bentukTudung"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="150dp"
+                android:layout_height="25dp"
+                android:background="@drawable/spinnerstyle"
+                android:layout_margin="20dp"
                 android:gravity="end" />
         </LinearLayout>
 
@@ -46,12 +66,17 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:layout_gravity="center"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="15dp"
                 android:text="Permukaan Tudung" />
 
             <Spinner
                 android:id="@+id/permukaanTudung"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="150dp"
+                android:layout_height="25dp"
+                android:background="@drawable/spinnerstyle"
+                android:layout_margin="20dp"
                 android:gravity="end"
                 />
         </LinearLayout>
@@ -74,12 +99,17 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:layout_gravity="center"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="15dp"
                 android:text="Warna Tudung" />
 
             <Spinner
                 android:id="@+id/warnaTudung"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="150dp"
+                android:layout_height="25dp"
+                android:background="@drawable/spinnerstyle"
+                android:layout_margin="20dp"
                 android:gravity="end"
                  />
         </LinearLayout>
@@ -102,14 +132,18 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="2"
                 android:layout_gravity="center"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="15dp"
                 android:text="Kondisi Jamur" />
 
             <Spinner
                 android:id="@+id/kondisiJamur"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:gravity="end"
-                android:entries="@array/kondisiJamur" />
+                android:layout_width="150dp"
+                android:layout_height="25dp"
+                android:background="@drawable/spinnerstyle"
+                android:layout_margin="20dp"
+                android:gravity="end" />
         </LinearLayout>
 
         <View
@@ -130,12 +164,17 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="2"
                 android:layout_gravity="center"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="15dp"
                 android:text="Aroma Jamur" />
 
             <Spinner
                 android:id="@+id/aromaJamur"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="150dp"
+                android:layout_height="25dp"
+                android:background="@drawable/spinnerstyle"
+                android:layout_margin="20dp"
                 android:gravity="end"
                 android:entries="@array/aromaJamur" />
         </LinearLayout>
@@ -158,12 +197,17 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="2"
                 android:layout_gravity="center"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="15dp"
                 android:text="Pelekatan Insang" />
 
             <Spinner
                 android:id="@+id/pelakatanInsang"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="150dp"
+                android:layout_height="25dp"
+                android:background="@drawable/spinnerstyle"
+                android:layout_margin="20dp"
                 android:gravity="end"
                 android:entries="@array/pelekatanInsang" />
         </LinearLayout>
@@ -186,12 +230,17 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="2"
                 android:layout_gravity="center"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="15dp"
                 android:text="Kerapatan Insang" />
 
             <Spinner
                 android:id="@+id/kerapatanInsang"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="150dp"
+                android:layout_height="25dp"
+                android:background="@drawable/spinnerstyle"
+                android:layout_margin="20dp"
                 android:gravity="end"
                 android:entries="@array/kerapatanGarisInsang" />
         </LinearLayout>
@@ -214,12 +263,17 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="2"
                 android:layout_gravity="center"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="15dp"
                 android:text="Ukuran Insang" />
 
             <Spinner
                 android:id="@+id/ukuranInsang"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="150dp"
+                android:layout_height="25dp"
+                android:background="@drawable/spinnerstyle"
+                android:layout_margin="20dp"
                 android:gravity="end"
                 android:entries="@array/ukuranInsang" />
         </LinearLayout>
@@ -242,12 +296,17 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="2"
                 android:layout_gravity="center"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="15dp"
                 android:text="Warna Insang" />
 
             <Spinner
                 android:id="@+id/warnaInsang"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="150dp"
+                android:layout_height="25dp"
+                android:background="@drawable/spinnerstyle"
+                android:layout_margin="20dp"
                 android:gravity="end"
                 android:entries="@array/warnaInsang" />
         </LinearLayout>
@@ -270,12 +329,17 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="2"
                 android:layout_gravity="center"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="15dp"
                 android:text="Bentuk Tangkai" />
 
             <Spinner
                 android:id="@+id/bentukTangkai"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="150dp"
+                android:layout_height="25dp"
+                android:background="@drawable/spinnerstyle"
+                android:layout_margin="20dp"
                 android:gravity="end"
                 android:entries="@array/bentukTangkai" />
         </LinearLayout>
@@ -298,12 +362,17 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="2"
                 android:layout_gravity="center"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="15dp"
                 android:text="Bentuk Bawah Tangkai" />
 
             <Spinner
                 android:id="@+id/bentukBawahTangkai"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="150dp"
+                android:layout_height="25dp"
+                android:background="@drawable/spinnerstyle"
+                android:layout_margin="20dp"
                 android:gravity="end"
                 android:entries="@array/akarTangkai" />
         </LinearLayout>
@@ -326,12 +395,17 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="2"
                 android:layout_gravity="center"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="15dp"
                 android:text="Permukaan Tangkai di atas Cincin" />
 
             <Spinner
                 android:id="@+id/permukaanTangkaiAtasCincin"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="150dp"
+                android:layout_height="25dp"
+                android:background="@drawable/spinnerstyle"
+                android:layout_margin="20dp"
                 android:gravity="end"
                 android:entries="@array/permukaanTangkaiAtasCincin" />
         </LinearLayout>
@@ -354,12 +428,17 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="2"
                 android:layout_gravity="center"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="15dp"
                 android:text="Permukaan Tangkai di bawah Cincin" />
 
             <Spinner
                 android:id="@+id/permukaanTangkaiBawahCincin"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="150dp"
+                android:layout_height="25dp"
+                android:background="@drawable/spinnerstyle"
+                android:layout_margin="20dp"
                 android:gravity="end"
                 android:entries="@array/permukaanTangkaiBawahCincin" />
         </LinearLayout>
@@ -382,12 +461,17 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="2"
                 android:layout_gravity="center"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="15dp"
                 android:text="Warna Tangkai di atas Cincin" />
 
             <Spinner
                 android:id="@+id/warnaTangkaiAtasCincin"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="150dp"
+                android:layout_height="25dp"
+                android:background="@drawable/spinnerstyle"
+                android:layout_margin="20dp"
                 android:gravity="end"
                 android:entries="@array/warnaTangkaiAtasCincin" />
         </LinearLayout>
@@ -410,12 +494,17 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="2"
                 android:layout_gravity="center"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="15dp"
                 android:text="Warna Tangkai di bawah Cincin" />
 
             <Spinner
                 android:id="@+id/warnaTangkaiBawahCincin"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="150dp"
+                android:layout_height="25dp"
+                android:background="@drawable/spinnerstyle"
+                android:layout_margin="20dp"
                 android:gravity="end"
                 android:entries="@array/warnaTangkaiBawahCincin" />
         </LinearLayout>
@@ -438,12 +527,17 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="2"
                 android:layout_gravity="center"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="15dp"
                 android:text="Tipe Membran Pembungkus" />
 
             <Spinner
                 android:id="@+id/tipeMembranPembungkus"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="150dp"
+                android:layout_height="25dp"
+                android:background="@drawable/spinnerstyle"
+                android:layout_margin="20dp"
                 android:gravity="end"
                 android:entries="@array/tipeMembranPembungkus" />
         </LinearLayout>
@@ -466,12 +560,17 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="2"
                 android:layout_gravity="center"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="15dp"
                 android:text="Warna Membran Pembungkus" />
 
             <Spinner
                 android:id="@+id/warnaMembranPembungkus"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="150dp"
+                android:layout_height="25dp"
+                android:background="@drawable/spinnerstyle"
+                android:layout_margin="20dp"
                 android:gravity="end"
                 android:entries="@array/warnaMembranPembungkus" />
         </LinearLayout>
@@ -494,12 +593,17 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="2"
                 android:layout_gravity="center"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="15dp"
                 android:text="Banyaknya Cincin" />
 
             <Spinner
                 android:id="@+id/banyakCincin"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="150dp"
+                android:layout_height="25dp"
+                android:background="@drawable/spinnerstyle"
+                android:layout_margin="20dp"
                 android:gravity="end"
                 android:entries="@array/banyakCincin" />
         </LinearLayout>
@@ -522,12 +626,17 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="2"
                 android:layout_gravity="center"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="15dp"
                 android:text="Tipe Cincin" />
 
             <Spinner
                 android:id="@+id/tipeCincin"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="175dp"
+                android:layout_height="25dp"
+                android:background="@drawable/spinnerstyle"
+                android:layout_margin="20dp"
                 android:gravity="end"
                 android:entries="@array/tipeCincin" />
         </LinearLayout>
@@ -550,12 +659,17 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="2"
                 android:layout_gravity="center"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="15dp"
                 android:text="Warna Spora" />
 
             <Spinner
                 android:id="@+id/warnaSpora"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="150dp"
+                android:layout_height="25dp"
+                android:background="@drawable/spinnerstyle"
+                android:layout_margin="20dp"
                 android:gravity="end"
                 android:entries="@array/warnaSpore" />
         </LinearLayout>
@@ -578,12 +692,17 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="2"
                 android:layout_gravity="center"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="15dp"
                 android:text="Populasi Jamur" />
 
             <Spinner
                 android:id="@+id/populasiJamur"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="150dp"
+                android:layout_height="25dp"
+                android:background="@drawable/spinnerstyle"
+                android:layout_margin="20dp"
                 android:gravity="end"
                 android:entries="@array/populasiJamur" />
         </LinearLayout>
@@ -606,12 +725,17 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="2"
                 android:layout_gravity="center"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="15dp"
                 android:text="Habitat Jamur" />
 
             <Spinner
                 android:id="@+id/habitatJamur"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="150dp"
+                android:layout_height="25dp"
+                android:background="@drawable/spinnerstyle"
+                android:layout_margin="20dp"
                 android:gravity="end"
                 android:entries="@array/habitatJamur" />
         </LinearLayout>
@@ -634,12 +758,17 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="2"
                 android:layout_gravity="center"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="15dp"
                 android:text="Pilih nilai K" />
 
             <Spinner
                 android:id="@+id/nilaiK"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="150dp"
+                android:layout_height="25dp"
+                android:background="@drawable/spinnerstyle"
+                android:layout_margin="20dp"
                 android:gravity="end"
                 android:entries="@array/k" />
         </LinearLayout>
@@ -660,12 +789,16 @@
             android:orientation="vertical">
             <Button
                 android:id="@+id/buttonDiagnose"
-                android:text="Proceed"
-                android:layout_width="match_parent"
+                android:text="Classify"
+                android:layout_width="300dp"
                 android:layout_height="75dp"
+                android:background="@drawable/buttonstyle"
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
                 android:layout_gravity="center_horizontal|center"/>
         </LinearLayout>
-
         <!-- @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ -->
 
     </LinearLayout>
